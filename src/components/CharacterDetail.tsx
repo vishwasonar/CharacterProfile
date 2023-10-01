@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import { useNavigate } from "react-router";
-import Images from "./Images";
 
-interface CharacterDetail {
+interface CharacterDetailProp {
 	characterData: any;
 }
 
-const CharacterDetail: React.FC<CharacterDetail> = ({ characterData }) => {
+const CharacterDetail: React.FC<CharacterDetailProp> = ({ characterData }) => {
 	const navigate = useNavigate();
 
 	const openEpisodeLink = (link: any) => {

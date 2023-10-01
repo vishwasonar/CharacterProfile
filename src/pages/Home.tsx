@@ -1,11 +1,8 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { characterApi } from "../api/CharacterApi";
 import Cards from "../components/Cards";
-import { Filterbox } from "../components/Filterbox";
 import Navbar from "../components/Navbar";
 import Pagination from "../components/Pagination";
-import { apiEndPoint } from "../settings/config";
 
 const Home: React.FC = () => {
 	const [characterData, setCharacterData] = useState<any>([]);
