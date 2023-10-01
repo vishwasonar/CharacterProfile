@@ -68,7 +68,10 @@ const Cards: React.FC<CardComponentProps> = ({ characters }) => {
 						);
 					})
 				) : (
-					<div className="flex items-center h-96 justify-center container">
+					<div
+						className="flex items-center h-96 justify-center container"
+						style={{ height: "80vh" }}
+					>
 						<div>
 							<h1 className="text-2xl font-bold">
 								No Data Found
