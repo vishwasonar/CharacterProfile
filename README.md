@@ -4,6 +4,9 @@ Clone this git repo in your local system and run following git command
 Go to the project directory
 - cd my-project
 
+Checkout to branch
+- git checkout development
+
 Install dependencies
 - npm install
 
