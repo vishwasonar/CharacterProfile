@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Raleway:wght@500&display=swap");
+
+* {
+	font-family: "Mooli", sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.episode-list {
+	overflow-y: auto !important;
+	height: 200px;
+	overflow-x: hidden !important;
+	/* padding: 10px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+	height: 55px !important;
+	width: 5px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+	background-color: #cfcece;
+	border-radius: 10px !important;
+	height: 55px !important;
 }
 
-.App-link {
-  color: #61dafb;
+::-moz-scrollbar {
+	height: 4px !important;
+	width: 1px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-moz-scrollbar-thumb {
+	background-color: #888;
+	height: 4px !important;
+	border-radius: 10px !important;
 }
